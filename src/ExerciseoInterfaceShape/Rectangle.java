@@ -48,7 +48,7 @@ public class Rectangle extends Shape implements Resizeable{
     public String toString() {
         return "A rectangle with width= " + width + " " +
                 "and leng= " + length + ", " +
-                "which is a subclass of " + super.toString();
+                "Area = "+getArea();
     }
 
     public static void main(String[] args) {

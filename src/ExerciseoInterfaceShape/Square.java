@@ -1,6 +1,6 @@
 package ExerciseoInterfaceShape;
 
-public class Square extends Rectangle {
+public class Square extends Rectangle implements howtoColor {
     public Square() {
         super(1.0, 1.0);
     }
@@ -25,7 +25,7 @@ public class Square extends Rectangle {
     @Override
     public String toString() {
         return "A square with side = " + getSide() + ", " +
-                "which is a subclass of " + super.toString();
+                "Area = "+getArea();
     }
 
     public static void main(String[] args) {
@@ -33,5 +33,10 @@ public class Square extends Rectangle {
         System.out.println(square);
         square.resize(2);
         System.out.println(square);
+    }
+
+    @Override
+    public String howtoColor() {
+        return " color all four sides";
     }
 }

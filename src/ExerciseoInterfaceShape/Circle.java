@@ -35,7 +35,7 @@ public class Circle extends Shape implements Resizeable{
     @Override
     public String toString() {
         return "A circle with radius = " + radius + " ," +
-                "which is a subclass of " + super.toString();
+                "Area = "+getArea();
     }
 
     public static void main(String[] args) {
